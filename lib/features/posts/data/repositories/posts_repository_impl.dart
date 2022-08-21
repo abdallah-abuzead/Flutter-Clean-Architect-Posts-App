@@ -9,7 +9,7 @@ import '../../../../core/network/network_info.dart';
 import '../datasources/post_local_data_source.dart';
 import '../datasources/post_remote_data_source.dart';
 
-typedef Future<Unit> AddOrUpdateOrDeletePost();
+typedef AddOrUpdateOrDeletePost = Future<Unit> Function();
 
 class PostsRepositoryImpl implements PostsRepository {
   final PostRemoteDataSource remoteDataSource;
